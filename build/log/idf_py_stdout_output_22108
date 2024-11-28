@@ -1,0 +1,49 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\ESP32Project\AirQuality\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/ESP32Project/AirQuality/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6880 bytes. 0x780 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/ESP32Project/AirQuality/main/main.c:4:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/ESP32Project/AirQuality/main/main.c:5:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+In file included from C:/ESP32Project/AirQuality/main/main.c:10:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+C:/ESP32Project/AirQuality/main/main.c: In function 'adc_init':
+C:/ESP32Project/AirQuality/main/main.c:55:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   55 |     ret = adc1_config_channel_atten(ADC_CHANNEL, ADC_ATTEN);
+      |     ^~~
+In file included from C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc_types_legacy.h:8,
+                 from C:/Espressif/frameworks/esp-idf-v5.3.1/components/driver/deprecated/driver/adc.h:15:
+C:/Espressif/frameworks/esp-idf-v5.3.1/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+C:/ESP32Project/AirQuality/main/main.c: At top level:
+C:/ESP32Project/AirQuality/main/main.c:141:13: warning: 'read_temperature_humidity' defined but not used [-Wunused-function]
+  141 | static void read_temperature_humidity(void *arg) {
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ESP32Project/AirQuality/main/main.c:79:18: warning: 'i2c_master_init' defined but not used [-Wunused-function]
+   79 | static esp_err_t i2c_master_init(void) {
+      |                  ^~~~~~~~~~~~~~~
+C:/ESP32Project/AirQuality/main/main.c:49:18: warning: 'adc_init' defined but not used [-Wunused-function]
+   49 | static esp_err_t adc_init(void){
+      |                  ^~~~~~~~
+C:/ESP32Project/AirQuality/main/main.c:45:12: warning: 's_retry_num' defined but not used [-Wunused-variable]
+   45 | static int s_retry_num = 0;
+      |            ^~~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable AirQuality.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.8.dev5
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/ESP32Project/AirQuality/build/AirQuality.bin
+[7/7] cmd.exe /C "cd /D C:\ESP32Project\AirQuality\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/ESP32Project/AirQuality/build/partition_table/partition-table.bin C:/ESP32Project/AirQuality/build/AirQuality.bin"
+AirQuality.bin binary size 0xb7bb0 bytes. Smallest app partition is 0x100000 bytes. 0x48450 bytes (28%) free.

@@ -1,0 +1,164 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+[0m
+[0;33m0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+[0m
+[0;33m0x40081a42: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/panic.c:463
+0x400894c5: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/port/esp_system_chip.c:92
+0x40090ffd: abort at C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib/abort.c:38
+0x400894bb: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_system/esp_err.c:49
+0x400de875: esp_netif_create_default_wifi_sta at C:/Espressif/frameworks/esp-idf-v5.3.1/components/esp_wifi/src/wifi_default.c:390 (discriminator 1)
+0x400d69f5: wifi_init_sta at C:/ESP32Project/AirQuality/main/main.c:236
+0x400d6ca4: app_main at C:/ESP32Project/AirQuality/main/main.c:309
+0x4014c2b7: main_task at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/app_startup.c:208
+0x40089fd1: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

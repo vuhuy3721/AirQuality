@@ -1,0 +1,519 @@
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Nov 28 2024 18:42:47[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=211c4h (135620) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=000311ec vaddr=3ffb0000 size=03f48h ( 16200) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=0003513c vaddr=40080000 size=0aedch ( 44764) load[0m
+[0;32mI (175) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=85d90h (548240) map[0m
+[0;32mI (363) esp_image: segment 4: paddr=000c5db8 vaddr=4008aedc size=0d82ch ( 55340) load[0m
+[0;32mI (398) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (398) boot: Disabling RNG early entropy source...[0m
+[0;32mI (410) cpu_start: Multicore app[0m
+[0;32mI (418) cpu_start: Pro cpu start user code[0m
+[0;32mI (418) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (418) app_init: Application information:[0m
+[0;32mI (421) app_init: Project name:     AirQuality[0m
+[0;32mI (426) app_init: App version:      1[0m
+[0;32mI (430) app_init: Compile time:     Nov 28 2024 18:42:33[0m
+[0;32mI (436) app_init: ELF file SHA256:  9292db126...[0m
+[0;32mI (442) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (452) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (457) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (462) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (469) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (475) heap_init: At 3FFB8190 len 00027E70 (159 KiB): DRAM[0m
+[0;32mI (481) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 40098708 len 000078F8 (30 KiB): IRAM[0m
+[0;32mI (502) spi_flash: detected chip: generic[0m
+[0;32mI (505) spi_flash: flash io: dio[0m
+[0;33mW (509) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (522) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (532) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (572) Smoke Sensor: ESP_WIFI_MODE_STA[0m
+I (592) wifi:wifi driver task: 3ffc01e8, prio:23, stack:6656, core=0
+I (602) wifi:wifi firmware version: ccaebfa
+I (602) wifi:wifi certification version: v7.0
+I (602) wifi:config NVS flash: enabled
+I (602) wifi:config nano formating: disabled
+I (612) wifi:Init data frame dynamic rx buffer num: 32
+I (612) wifi:Init static rx mgmt buffer num: 5
+I (622) wifi:Init management short buffer num: 32
+I (622) wifi:Init dynamic tx buffer num: 32
+I (622) wifi:Init static rx buffer size: 1600
+I (632) wifi:Init static rx buffer num: 10
+I (632) wifi:Init dynamic rx buffer num: 32
+[0;32mI (642) wifi_init: rx ba win: 6[0m
+[0;32mI (642) wifi_init: accept mbox: 6[0m
+[0;32mI (642) wifi_init: tcpip mbox: 32[0m
+[0;32mI (652) wifi_init: udp mbox: 6[0m
+[0;32mI (652) wifi_init: tcp mbox: 6[0m
+[0;32mI (662) wifi_init: tcp tx win: 5760[0m
+[0;32mI (662) wifi_init: tcp rx win: 5760[0m
+[0;32mI (662) wifi_init: tcp mss: 1440[0m
+[0;32mI (672) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (672) wifi_init: WiFi RX IRAM OP enabled[0m
+W (682) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2
+[0;32mI (692) phy_init: phy_version 4830,54550f7,Jun 20 2024,14:22:08[0m
+[0;33mW (772) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (802) wifi:mode : sta (d0:ef:76:58:60:80)
+I (802) wifi:enable tsf
+[0;32mI (802) Smoke Sensor: wifi_init_sta finished.[0m
+I (822) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (822) wifi:state: init -> auth (0xb0)
+I (832) wifi:state: auth -> assoc (0x0)
+I (842) wifi:state: assoc -> run (0x10)
+I (862) wifi:connected with phong202, aid = 1, channel 6, BW20, bssid = a8:25:eb:20:b4:51
+I (862) wifi:security: WPA2-PSK, phy: bgn, rssi: -32
+I (862) wifi:pm start, type: 1
+
+I (862) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (882) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1102) wifi:<ba-add>idx:0 (ifx:0, a8:25:eb:20:b4:51), tid:6, ssn:3, winSize:64
+[0;32mI (1872) esp_netif_handlers: sta ip: 192.168.1.44, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1872) Smoke Sensor: Got IP: 192.168.1.44[0m
+[0;32mI (1872) Smoke Sensor: connected to ap wifi[0m
+[0;32mI (1882) Smoke Sensor: Initializing I2C master...[0m
+[0;32mI (1882) Smoke Sensor: I2C master initialized.[0m
+[0;32mI (1892) Smoke Sensor: AHT20 initialized.[0m
+[0;32mI (1892) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (1902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (1972) AHT20: Temperature: 28.03 °C, Humidity: 42.33 %[0m
+[0;32mI (2902) Smoke Sensor: Raw: 1699, Voltage: 1.37 V[0m
+[0;32mI (2902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (3902) Smoke Sensor: Raw: 1699, Voltage: 1.37 V[0m
+[0;32mI (3902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (4052) AHT20: Temperature: 27.96 °C, Humidity: 42.34 %[0m
+[0;32mI (4902) Smoke Sensor: Raw: 1698, Voltage: 1.37 V[0m
+[0;32mI (4902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (5902) Smoke Sensor: Raw: 1701, Voltage: 1.37 V[0m
+[0;32mI (5902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (6132) AHT20: Temperature: 27.91 °C, Humidity: 42.35 %[0m
+[0;32mI (6902) Smoke Sensor: Raw: 1702, Voltage: 1.37 V[0m
+[0;32mI (6902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (7902) Smoke Sensor: Raw: 1704, Voltage: 1.37 V[0m
+[0;32mI (7902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (8212) AHT20: Temperature: 27.92 °C, Humidity: 42.38 %[0m
+[0;32mI (8902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (8902) Smoke Sensor: Air quality normal.[0m
+I (9382) wifi:<ba-add>idx:1 (ifx:0, a8:25:eb:20:b4:51), tid:0, ssn:1, winSize:64
+[0;32mI (9902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (9902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (10292) AHT20: Temperature: 27.88 °C, Humidity: 42.43 %[0m
+[0;32mI (10902) Smoke Sensor: Raw: 1707, Voltage: 1.38 V[0m
+[0;32mI (10902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (11902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (11902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (12372) AHT20: Temperature: 27.94 °C, Humidity: 42.52 %[0m
+[0;32mI (12902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (12902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (13902) Smoke Sensor: Raw: 1707, Voltage: 1.38 V[0m
+[0;32mI (13902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (14452) AHT20: Temperature: 27.94 °C, Humidity: 42.61 %[0m
+[0;32mI (14902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (14902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (15902) Smoke Sensor: Raw: 1707, Voltage: 1.38 V[0m
+[0;32mI (15902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (16532) AHT20: Temperature: 27.95 °C, Humidity: 42.64 %[0m
+[0;32mI (16902) Smoke Sensor: Raw: 1708, Voltage: 1.38 V[0m
+[0;32mI (16902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (17902) Smoke Sensor: Raw: 1710, Voltage: 1.38 V[0m
+[0;32mI (17902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (18612) AHT20: Temperature: 27.98 °C, Humidity: 42.79 %[0m
+[0;32mI (18902) Smoke Sensor: Raw: 1715, Voltage: 1.38 V[0m
+[0;32mI (18902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (19902) Smoke Sensor: Raw: 1711, Voltage: 1.38 V[0m
+[0;32mI (19902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (20692) AHT20: Temperature: 28.02 °C, Humidity: 42.92 %[0m
+[0;32mI (20902) Smoke Sensor: Raw: 1712, Voltage: 1.38 V[0m
+[0;32mI (20902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (21902) Smoke Sensor: Raw: 1714, Voltage: 1.38 V[0m
+[0;32mI (21902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (22772) AHT20: Temperature: 28.04 °C, Humidity: 43.00 %[0m
+[0;32mI (22902) Smoke Sensor: Raw: 1714, Voltage: 1.38 V[0m
+[0;32mI (22902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (23902) Smoke Sensor: Raw: 1714, Voltage: 1.38 V[0m
+[0;32mI (23902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (24852) AHT20: Temperature: 28.04 °C, Humidity: 43.02 %[0m
+[0;32mI (24902) Smoke Sensor: Raw: 1715, Voltage: 1.38 V[0m
+[0;32mI (24902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (25902) Smoke Sensor: Raw: 1712, Voltage: 1.38 V[0m
+[0;32mI (25902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (26902) Smoke Sensor: Raw: 1714, Voltage: 1.38 V[0m
+[0;32mI (26902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (26932) AHT20: Temperature: 28.10 °C, Humidity: 43.24 %[0m
+[0;32mI (27902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (27902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (28902) Smoke Sensor: Raw: 1716, Voltage: 1.38 V[0m
+[0;32mI (28902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (29012) AHT20: Temperature: 28.12 °C, Humidity: 43.25 %[0m
+[0;32mI (29902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (29902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (30902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (30902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (31092) AHT20: Temperature: 28.13 °C, Humidity: 43.16 %[0m
+[0;32mI (31902) Smoke Sensor: Raw: 1718, Voltage: 1.38 V[0m
+[0;32mI (31902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (32902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (32902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (33172) AHT20: Temperature: 28.17 °C, Humidity: 43.24 %[0m
+[0;32mI (33902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (33902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (34902) Smoke Sensor: Raw: 1718, Voltage: 1.38 V[0m
+[0;32mI (34902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (35252) AHT20: Temperature: 28.17 °C, Humidity: 43.17 %[0m
+[0;32mI (35902) Smoke Sensor: Raw: 1721, Voltage: 1.39 V[0m
+[0;32mI (35902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (36902) Smoke Sensor: Raw: 1717, Voltage: 1.38 V[0m
+[0;32mI (36902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (37332) AHT20: Temperature: 28.18 °C, Humidity: 43.16 %[0m
+[0;32mI (37902) Smoke Sensor: Raw: 1719, Voltage: 1.39 V[0m
+[0;32mI (37902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (38902) Smoke Sensor: Raw: 1721, Voltage: 1.39 V[0m
+[0;32mI (38902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (39412) AHT20: Temperature: 28.21 °C, Humidity: 43.25 %[0m
+[0;32mI (39902) Smoke Sensor: Raw: 1722, Voltage: 1.39 V[0m
+[0;32mI (39902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (40902) Smoke Sensor: Raw: 1723, Voltage: 1.39 V[0m
+[0;32mI (40902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (41492) AHT20: Temperature: 28.28 °C, Humidity: 43.41 %[0m
+[0;32mI (41902) Smoke Sensor: Raw: 1723, Voltage: 1.39 V[0m
+[0;32mI (41902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (42902) Smoke Sensor: Raw: 1722, Voltage: 1.39 V[0m
+[0;32mI (42902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (43572) AHT20: Temperature: 28.31 °C, Humidity: 43.67 %[0m
+[0;32mI (43902) Smoke Sensor: Raw: 1720, Voltage: 1.39 V[0m
+[0;32mI (43902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (44902) Smoke Sensor: Raw: 1721, Voltage: 1.39 V[0m
+[0;32mI (44902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (45652) AHT20: Temperature: 28.38 °C, Humidity: 43.88 %[0m
+[0;32mI (45902) Smoke Sensor: Raw: 1721, Voltage: 1.39 V[0m
+[0;32mI (45902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (46902) Smoke Sensor: Raw: 1722, Voltage: 1.39 V[0m
+[0;32mI (46902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (47732) AHT20: Temperature: 28.40 °C, Humidity: 43.83 %[0m
+[0;32mI (47902) Smoke Sensor: Raw: 1723, Voltage: 1.39 V[0m
+[0;32mI (47902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (48902) Smoke Sensor: Raw: 1725, Voltage: 1.39 V[0m
+[0;32mI (48902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (49812) AHT20: Temperature: 28.43 °C, Humidity: 43.81 %[0m
+[0;32mI (49902) Smoke Sensor: Raw: 1723, Voltage: 1.39 V[0m
+[0;32mI (49902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (50902) Smoke Sensor: Raw: 1725, Voltage: 1.39 V[0m
+[0;32mI (50902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (51892) AHT20: Temperature: 28.47 °C, Humidity: 44.05 %[0m
+[0;32mI (51902) Smoke Sensor: Raw: 1726, Voltage: 1.39 V[0m
+[0;32mI (51902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (52902) Smoke Sensor: Raw: 1726, Voltage: 1.39 V[0m
+[0;32mI (52902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (53902) Smoke Sensor: Raw: 1724, Voltage: 1.39 V[0m
+[0;32mI (53902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (53972) AHT20: Temperature: 28.55 °C, Humidity: 44.35 %[0m
+[0;32mI (54902) Smoke Sensor: Raw: 1725, Voltage: 1.39 V[0m
+[0;32mI (54902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (55902) Smoke Sensor: Raw: 1725, Voltage: 1.39 V[0m
+[0;32mI (55902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (56052) AHT20: Temperature: 28.58 °C, Humidity: 44.30 %[0m
+[0;32mI (56902) Smoke Sensor: Raw: 1726, Voltage: 1.39 V[0m
+[0;32mI (56902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (57902) Smoke Sensor: Raw: 1727, Voltage: 1.39 V[0m
+[0;32mI (57902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (58132) AHT20: Temperature: 28.64 °C, Humidity: 44.30 %[0m
+[0;32mI (58902) Smoke Sensor: Raw: 1727, Voltage: 1.39 V[0m
+[0;32mI (58902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (59902) Smoke Sensor: Raw: 1727, Voltage: 1.39 V[0m
+[0;32mI (59902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (60212) AHT20: Temperature: 28.70 °C, Humidity: 44.30 %[0m
+[0;32mI (60902) Smoke Sensor: Raw: 1734, Voltage: 1.40 V[0m
+[0;32mI (60902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (61902) Smoke Sensor: Raw: 1729, Voltage: 1.39 V[0m
+[0;32mI (61902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (62292) AHT20: Temperature: 28.81 °C, Humidity: 44.29 %[0m
+[0;32mI (62902) Smoke Sensor: Raw: 1727, Voltage: 1.39 V[0m
+[0;32mI (62902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (63902) Smoke Sensor: Raw: 1729, Voltage: 1.39 V[0m
+[0;32mI (63902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (64372) AHT20: Temperature: 28.87 °C, Humidity: 44.22 %[0m
+[0;32mI (64902) Smoke Sensor: Raw: 1730, Voltage: 1.39 V[0m
+[0;32mI (64902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (65902) Smoke Sensor: Raw: 1737, Voltage: 1.40 V[0m
+[0;32mI (65902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (66452) AHT20: Temperature: 28.93 °C, Humidity: 44.09 %[0m
+[0;32mI (66902) Smoke Sensor: Raw: 1732, Voltage: 1.40 V[0m
+[0;32mI (66902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (67902) Smoke Sensor: Raw: 1733, Voltage: 1.40 V[0m
+[0;32mI (67902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (68532) AHT20: Temperature: 29.01 °C, Humidity: 43.99 %[0m
+[0;32mI (68902) Smoke Sensor: Raw: 1733, Voltage: 1.40 V[0m
+[0;32mI (68902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (69902) Smoke Sensor: Raw: 1730, Voltage: 1.39 V[0m
+[0;32mI (69902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (70612) AHT20: Temperature: 29.05 °C, Humidity: 43.93 %[0m
+[0;32mI (70902) Smoke Sensor: Raw: 1731, Voltage: 1.39 V[0m
+[0;32mI (70902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (71902) Smoke Sensor: Raw: 1733, Voltage: 1.40 V[0m
+[0;32mI (71902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (72692) AHT20: Temperature: 29.12 °C, Humidity: 43.89 %[0m
+[0;32mI (72902) Smoke Sensor: Raw: 1731, Voltage: 1.39 V[0m
+[0;32mI (72902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (73902) Smoke Sensor: Raw: 1733, Voltage: 1.40 V[0m
+[0;32mI (73902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (74772) AHT20: Temperature: 29.18 °C, Humidity: 43.86 %[0m
+[0;32mI (74902) Smoke Sensor: Raw: 1732, Voltage: 1.40 V[0m
+[0;32mI (74902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (75902) Smoke Sensor: Raw: 1733, Voltage: 1.40 V[0m
+[0;32mI (75902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (76852) AHT20: Temperature: 29.23 °C, Humidity: 43.82 %[0m
+[0;32mI (76902) Smoke Sensor: Raw: 1736, Voltage: 1.40 V[0m
+[0;32mI (76902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (77902) Smoke Sensor: Raw: 1739, Voltage: 1.40 V[0m
+[0;32mI (77902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (78902) Smoke Sensor: Raw: 1737, Voltage: 1.40 V[0m
+[0;32mI (78902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (78932) AHT20: Temperature: 29.29 °C, Humidity: 43.65 %[0m
+[0;32mI (79902) Smoke Sensor: Raw: 1738, Voltage: 1.40 V[0m
+[0;32mI (79902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (80902) Smoke Sensor: Raw: 1737, Voltage: 1.40 V[0m
+[0;32mI (80902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (81012) AHT20: Temperature: 29.28 °C, Humidity: 43.56 %[0m
+[0;32mI (81902) Smoke Sensor: Raw: 1737, Voltage: 1.40 V[0m
+[0;32mI (81902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (82902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (82902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (83092) AHT20: Temperature: 29.28 °C, Humidity: 43.49 %[0m
+[0;32mI (83902) Smoke Sensor: Raw: 1742, Voltage: 1.40 V[0m
+[0;32mI (83902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (84902) Smoke Sensor: Raw: 1742, Voltage: 1.40 V[0m
+[0;32mI (84902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (85172) AHT20: Temperature: 29.32 °C, Humidity: 43.41 %[0m
+[0;32mI (85902) Smoke Sensor: Raw: 1743, Voltage: 1.40 V[0m
+[0;32mI (85902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (86902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (86902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (87252) AHT20: Temperature: 29.37 °C, Humidity: 43.34 %[0m
+[0;32mI (87902) Smoke Sensor: Raw: 1747, Voltage: 1.41 V[0m
+[0;32mI (87902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (88902) Smoke Sensor: Raw: 1741, Voltage: 1.40 V[0m
+[0;32mI (88902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (89332) AHT20: Temperature: 29.42 °C, Humidity: 43.25 %[0m
+[0;32mI (89902) Smoke Sensor: Raw: 1740, Voltage: 1.40 V[0m
+[0;32mI (89902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (90902) Smoke Sensor: Raw: 1739, Voltage: 1.40 V[0m
+[0;32mI (90902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (91412) AHT20: Temperature: 29.49 °C, Humidity: 43.26 %[0m
+[0;32mI (91902) Smoke Sensor: Raw: 1739, Voltage: 1.40 V[0m
+[0;32mI (91902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (92902) Smoke Sensor: Raw: 1739, Voltage: 1.40 V[0m
+[0;32mI (92902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (93492) AHT20: Temperature: 29.55 °C, Humidity: 43.24 %[0m
+[0;32mI (93902) Smoke Sensor: Raw: 1740, Voltage: 1.40 V[0m
+[0;32mI (93902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (94902) Smoke Sensor: Raw: 1741, Voltage: 1.40 V[0m
+[0;32mI (94902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (95572) AHT20: Temperature: 29.59 °C, Humidity: 43.14 %[0m
+[0;32mI (95902) Smoke Sensor: Raw: 1742, Voltage: 1.40 V[0m
+[0;32mI (95902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (96902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (96902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (97652) AHT20: Temperature: 29.67 °C, Humidity: 43.15 %[0m
+[0;32mI (97902) Smoke Sensor: Raw: 1743, Voltage: 1.40 V[0m
+[0;32mI (97902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (98902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (98902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (99732) AHT20: Temperature: 29.71 °C, Humidity: 43.10 %[0m
+[0;32mI (99902) Smoke Sensor: Raw: 1751, Voltage: 1.41 V[0m
+[0;32mI (99902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (100902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (100902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (101812) AHT20: Temperature: 29.77 °C, Humidity: 43.04 %[0m
+[0;32mI (101902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (101902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (102902) Smoke Sensor: Raw: 1745, Voltage: 1.41 V[0m
+[0;32mI (102902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (103892) AHT20: Temperature: 29.82 °C, Humidity: 42.97 %[0m
+[0;32mI (103902) Smoke Sensor: Raw: 1745, Voltage: 1.41 V[0m
+[0;32mI (103902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (104902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (104902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (105902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (105902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (105972) AHT20: Temperature: 29.88 °C, Humidity: 42.96 %[0m
+[0;32mI (106902) Smoke Sensor: Raw: 1750, Voltage: 1.41 V[0m
+[0;32mI (106902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (107902) Smoke Sensor: Raw: 1750, Voltage: 1.41 V[0m
+[0;32mI (107902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (108052) AHT20: Temperature: 29.94 °C, Humidity: 42.95 %[0m
+[0;32mI (108902) Smoke Sensor: Raw: 1750, Voltage: 1.41 V[0m
+[0;32mI (108902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (109902) Smoke Sensor: Raw: 1752, Voltage: 1.41 V[0m
+[0;32mI (109902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (110132) AHT20: Temperature: 30.00 °C, Humidity: 42.85 %[0m
+[0;32mI (110902) Smoke Sensor: Raw: 1754, Voltage: 1.41 V[0m
+[0;32mI (110902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (111902) Smoke Sensor: Raw: 1754, Voltage: 1.41 V[0m
+[0;32mI (111902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (112212) AHT20: Temperature: 30.03 °C, Humidity: 42.76 %[0m
+[0;32mI (112902) Smoke Sensor: Raw: 1754, Voltage: 1.41 V[0m
+[0;32mI (112902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (113902) Smoke Sensor: Raw: 1753, Voltage: 1.41 V[0m
+[0;32mI (113902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (114292) AHT20: Temperature: 30.10 °C, Humidity: 42.64 %[0m
+[0;32mI (114902) Smoke Sensor: Raw: 1753, Voltage: 1.41 V[0m
+[0;32mI (114902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (115902) Smoke Sensor: Raw: 1754, Voltage: 1.41 V[0m
+[0;32mI (115902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (116372) AHT20: Temperature: 30.15 °C, Humidity: 42.55 %[0m
+[0;32mI (116902) Smoke Sensor: Raw: 1760, Voltage: 1.42 V[0m
+[0;32mI (116902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (117902) Smoke Sensor: Raw: 1756, Voltage: 1.42 V[0m
+[0;32mI (117902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (118452) AHT20: Temperature: 30.17 °C, Humidity: 42.44 %[0m
+[0;32mI (118902) Smoke Sensor: Raw: 1757, Voltage: 1.42 V[0m
+[0;32mI (118902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (119902) Smoke Sensor: Raw: 1760, Voltage: 1.42 V[0m
+[0;32mI (119902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (120532) AHT20: Temperature: 30.25 °C, Humidity: 42.32 %[0m
+[0;32mI (120902) Smoke Sensor: Raw: 1759, Voltage: 1.42 V[0m
+[0;32mI (120902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (121902) Smoke Sensor: Raw: 1758, Voltage: 1.42 V[0m
+[0;32mI (121902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (122612) AHT20: Temperature: 30.29 °C, Humidity: 42.28 %[0m
+[0;32mI (122902) Smoke Sensor: Raw: 1756, Voltage: 1.42 V[0m
+[0;32mI (122902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (123902) Smoke Sensor: Raw: 1757, Voltage: 1.42 V[0m
+[0;32mI (123902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (124692) AHT20: Temperature: 30.33 °C, Humidity: 42.14 %[0m
+[0;32mI (124902) Smoke Sensor: Raw: 1759, Voltage: 1.42 V[0m
+[0;32mI (124902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (125902) Smoke Sensor: Raw: 1759, Voltage: 1.42 V[0m
+[0;32mI (125902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (126772) AHT20: Temperature: 30.37 °C, Humidity: 42.03 %[0m
+[0;32mI (126902) Smoke Sensor: Raw: 1761, Voltage: 1.42 V[0m
+[0;32mI (126902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (127902) Smoke Sensor: Raw: 1760, Voltage: 1.42 V[0m
+[0;32mI (127902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (128852) AHT20: Temperature: 31.04 °C, Humidity: 42.88 %[0m
+[0;32mI (128902) Smoke Sensor: Raw: 1759, Voltage: 1.42 V[0m
+[0;32mI (128902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (129902) Smoke Sensor: Raw: 1762, Voltage: 1.42 V[0m
+[0;32mI (129902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (130902) Smoke Sensor: Raw: 1757, Voltage: 1.42 V[0m
+[0;32mI (130902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (130932) AHT20: Temperature: 30.89 °C, Humidity: 42.60 %[0m
+[0;32mI (131902) Smoke Sensor: Raw: 1755, Voltage: 1.41 V[0m
+[0;32mI (131902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (132902) Smoke Sensor: Raw: 1753, Voltage: 1.41 V[0m
+[0;32mI (132902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (133012) AHT20: Temperature: 30.69 °C, Humidity: 42.02 %[0m
+[0;32mI (133902) Smoke Sensor: Raw: 1760, Voltage: 1.42 V[0m
+[0;32mI (133902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (134902) Smoke Sensor: Raw: 1752, Voltage: 1.41 V[0m
+[0;32mI (134902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (135092) AHT20: Temperature: 30.66 °C, Humidity: 41.61 %[0m
+[0;32mI (135902) Smoke Sensor: Raw: 1752, Voltage: 1.41 V[0m
+[0;32mI (135902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (136902) Smoke Sensor: Raw: 1751, Voltage: 1.41 V[0m
+[0;32mI (136902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (137172) AHT20: Temperature: 30.63 °C, Humidity: 41.18 %[0m
+[0;32mI (137902) Smoke Sensor: Raw: 1749, Voltage: 1.41 V[0m
+[0;32mI (137902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (138902) Smoke Sensor: Raw: 1748, Voltage: 1.41 V[0m
+[0;32mI (138902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (139252) AHT20: Temperature: 30.56 °C, Humidity: 40.79 %[0m
+[0;32mI (139902) Smoke Sensor: Raw: 1748, Voltage: 1.41 V[0m
+[0;32mI (139902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (140902) Smoke Sensor: Raw: 1748, Voltage: 1.41 V[0m
+[0;32mI (140902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (141332) AHT20: Temperature: 30.56 °C, Humidity: 40.58 %[0m
+[0;32mI (141902) Smoke Sensor: Raw: 1749, Voltage: 1.41 V[0m
+[0;32mI (141902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (142902) Smoke Sensor: Raw: 1749, Voltage: 1.41 V[0m
+[0;32mI (142902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (143412) AHT20: Temperature: 30.53 °C, Humidity: 40.29 %[0m
+[0;32mI (143902) Smoke Sensor: Raw: 1748, Voltage: 1.41 V[0m
+[0;32mI (143902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (144902) Smoke Sensor: Raw: 1747, Voltage: 1.41 V[0m
+[0;32mI (144902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (145492) AHT20: Temperature: 30.52 °C, Humidity: 40.09 %[0m
+[0;32mI (145902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (145902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (146902) Smoke Sensor: Raw: 1751, Voltage: 1.41 V[0m
+[0;32mI (146902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (147572) AHT20: Temperature: 30.50 °C, Humidity: 39.91 %[0m
+[0;32mI (147902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (147902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (148902) Smoke Sensor: Raw: 1745, Voltage: 1.41 V[0m
+[0;32mI (148902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (149652) AHT20: Temperature: 30.46 °C, Humidity: 39.73 %[0m
+[0;32mI (149902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (149902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (150902) Smoke Sensor: Raw: 1747, Voltage: 1.41 V[0m
+[0;32mI (150902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (151732) AHT20: Temperature: 30.43 °C, Humidity: 39.58 %[0m
+[0;32mI (151902) Smoke Sensor: Raw: 1747, Voltage: 1.41 V[0m
+[0;32mI (151902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (152902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (152902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (153812) AHT20: Temperature: 30.44 °C, Humidity: 39.48 %[0m
+[0;32mI (153902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (153902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (154902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (154902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (155892) AHT20: Temperature: 30.42 °C, Humidity: 39.38 %[0m
+[0;32mI (155902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (155902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (156902) Smoke Sensor: Raw: 1743, Voltage: 1.40 V[0m
+[0;32mI (156902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (157902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (157902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (157972) AHT20: Temperature: 30.40 °C, Humidity: 39.32 %[0m
+[0;32mI (158902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (158902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (159902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (159902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (160052) AHT20: Temperature: 30.40 °C, Humidity: 39.30 %[0m
+[0;32mI (160902) Smoke Sensor: Raw: 1745, Voltage: 1.41 V[0m
+[0;32mI (160902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (161902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (161902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (162132) AHT20: Temperature: 30.38 °C, Humidity: 39.30 %[0m
+[0;32mI (162902) Smoke Sensor: Raw: 1746, Voltage: 1.41 V[0m
+[0;32mI (162902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (163902) Smoke Sensor: Raw: 1752, Voltage: 1.41 V[0m
+[0;32mI (163902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (164212) AHT20: Temperature: 30.39 °C, Humidity: 39.17 %[0m
+[0;32mI (164902) Smoke Sensor: Raw: 1744, Voltage: 1.41 V[0m
+[0;32mI (164902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (165902) Smoke Sensor: Raw: 1743, Voltage: 1.40 V[0m
+[0;32mI (165902) Smoke Sensor: Air quality normal.[0m
+[0;32mI (166292) AHT20: Temperature: 30.40 °C, Humidity: 39.16 %[0m
+[0;32mI (166902) Smoke Sensor: Raw: 1743, Voltage: 1.40 V[0m
+[0;32mI (166902) Smoke Sensor: Air quality normal.[0m
