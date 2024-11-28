@@ -16,6 +16,7 @@
     "idf.toolsPathWin": "C:\\Espressif",
     "files.associations": {
         "esp_log.h": "c",
-        "i2c_master.h": "c"
+        "i2c_master.h": "c",
+        "mqtt_client.h": "c"
     }
 }
